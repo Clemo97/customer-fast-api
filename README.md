@@ -97,6 +97,9 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
 ## API Documentation
 Access the rest apis on postman via the link below, just ensure to add the access token.
 
+![SMS](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/postman.png)
+
+
 https://www.postman.com/gold-spaceship-937570/workspace/nairobi/collection/5714530-a7bef9cd-84a1-4aa7-85c0-8e88dabebb3b?action=share&creator=5714530
 
 FastAPI automatically generates interactive API documentation. You can access it at:
