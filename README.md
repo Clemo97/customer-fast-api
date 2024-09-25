@@ -92,7 +92,7 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
 
 3. SMS is sent using africas talking API when an order is made.
 
-![SMS](/home/clement/Documents/FOSS/chat-fast-api/images/sms.png)
+![SMS](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/sms.png)
 
 ## API Documentation
 
