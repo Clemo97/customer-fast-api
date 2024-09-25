@@ -69,7 +69,7 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
 
 1. Visit `https://customer-fast-api.onrender.com/login` to get authenticated in order to receive your `access token`.
 
-![Access Token](/home/clement/Documents/FOSS/chat-fast-api/images/accessToken.png)
+![Access Token](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/accessToken.png)
 
 2. Use acess token in postman to interact with /api/customers and /api/orders endpoints
 
@@ -92,9 +92,12 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
 
 3. SMS is sent using africas talking API when an order is made.
 
-![SMS](/home/clement/Documents/FOSS/chat-fast-api/images/sms.png)
+![SMS](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/sms.png)
 
 ## API Documentation
+Access the rest apis on postman via the link below, just ensure to add the access token.
+
+https://www.postman.com/gold-spaceship-937570/workspace/nairobi/collection/5714530-a7bef9cd-84a1-4aa7-85c0-8e88dabebb3b?action=share&creator=5714530
 
 FastAPI automatically generates interactive API documentation. You can access it at:
 
@@ -111,7 +114,7 @@ To run the tests, use the following command:
 pytest
 ```
 
-![Tests](/home/clement/Documents/FOSS/chat-fast-api/images/tests.png)
+![Tests](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/tests.png)
 
 
 ## Contributing
