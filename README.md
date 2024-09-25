@@ -69,7 +69,7 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
 
 1. Visit `https://customer-fast-api.onrender.com/login` to get authenticated in order to receive your `access token`.
 
-![Access Token](/home/clement/Documents/FOSS/chat-fast-api/images/accessToken.png)
+![Access Token](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/accessToken.png)
 
 2. Use acess token in postman to interact with /api/customers and /api/orders endpoints
 
