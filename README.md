@@ -111,7 +111,7 @@ To run the tests, use the following command:
 pytest
 ```
 
-![Tests](/home/clement/Documents/FOSS/chat-fast-api/images/tests.png)
+![Tests](https://raw.githubusercontent.com/Clemo97/customer-fast-api/refs/heads/main/images/tests.png)
 
 
 ## Contributing
