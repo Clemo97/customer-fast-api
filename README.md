@@ -13,8 +13,8 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone git@github.com:Clemo97/customer-fast-api.git
+   cd customer-fast-api
    ```
 
 2. Create a virtual environment:
@@ -63,16 +63,45 @@ This is a FastAPI application with SMS functionality using Africa's Talking API.
    uvicorn main:app --reload
    ```
 
-3. Open your web browser and navigate to `http://localhost:8000` to access the API.
+3. Open your web browser and navigate to `https://customer-fast-api.onrender.com/login` to access the API.
+
+## Getting an Access Token
+
+1. Visit `https://customer-fast-api.onrender.com/login` to get authenticated in order to receive your `access token`.
+
+![Access Token](/home/clement/Documents/FOSS/chat-fast-api/images/accessToken.png)
+
+2. Use acess token in postman to interact with /api/customers and /api/orders endpoints
+
+    ```
+    curl --location 'https://customer-fast-api.onrender.com/api/customers/2' \
+    --header 'Authorization: Bearer <Access Token>' \
+    --header 'Content-Type: application/json'
+    ```
+
+    curl command to make orders
+
+    ```
+    curl --location 'https://customer-fast-api.onrender.com/api/orders?customer_id=1' \
+    --header 'Content-Type: application/json' \
+    --header 'Authorization: Bearer <Access Token>' \
+    --data '{
+    "item": "Pork Sausages",
+    "amount": 609.00}'
+    ```
+
+3. SMS is sent using africas talking API when an order is made.
+
+![SMS](/home/clement/Documents/FOSS/chat-fast-api/images/sms.png)
 
 ## API Documentation
 
 FastAPI automatically generates interactive API documentation. You can access it at:
 
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+- Swagger UI: `https://customer-fast-api.onrender.com/docs`
+- ReDoc: `https://customer-fast-api.onrender.com/redoc`
 
-![API Documentation](https://fastapi.tiangolo.com/img/index/index-01-swagger-ui-simple.png)
+![SMS](/home/clement/Documents/FOSS/chat-fast-api/images/sms.png)
 
 ## Testing
 
@@ -81,6 +110,9 @@ To run the tests, use the following command:
 ```
 pytest
 ```
+
+![Tests](/home/clement/Documents/FOSS/chat-fast-api/images/tests.png)
+
 
 ## Contributing
 
