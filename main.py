@@ -22,7 +22,13 @@ AUTH0_CLIENT_ID = os.getenv("AUTH0_CLIENT_ID")
 API_AUDIENCE = os.getenv("API_AUDIENCE")
 CALLBACK_URL = os.getenv("CALLBACK_URL")
 
-app = FastAPI()
+app = FastAPI(
+    title="Customer Order Documentation",  
+    description="SIL API documentation",  
+    version="1.0.0",  
+    docs_url="/docs",  
+    redoc_url="/redoc",  
+)
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
